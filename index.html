@@ -8,28 +8,22 @@
 	<link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-	<div class="primary-window">
-		<div>
-			<header class="primary-header">
-				<h1>Create a New Account</h1>
-			</header>
-
-			<form class="primary-form">
-				<div>
-					<input class="form-text" type="text" name="username" placeholder="Username" required>
-				</div>
-				<div>
-					<input class="form-text" type="email" name="email-address" placeholder="name@domain.com" required>
-				</div>
-				<div>
-					<input class="form-text" type="password" placeholder="Password" required>
-				</div>
-				<div class="form-tos">Agree to our <a href="#">Terms</a> <input type="checkbox" required>
-				</div>
-				<div>
-					<button>Submit</button>
-				</div>
-			</form>
+	<div class="page">
+		<div class="signup-container">
+			<div class="social-login-container">
+				
+			</div>
+			<div class="signup-form-container">
+				<h1>Superdry.</h1>
+				<form id="signup-form" action="">
+					<label for="userEmail">Email<input type="email" id="userEmail"></label>
+					<label for="userFirstName">First Name<input type="text" id="userFirstName"></label>
+					<label for="userLastName">Last Name<input type="text" id="userLastName"></label>
+					<label for="userCity">City<input type="text" id="userCity"></label>
+					<label for="userNewsletterOptIn"><input type="checkbox" id="userNewsletterOptIn">I would like to receive the newsletter</label>
+					<button id="signup-form-submit-button" type="submit">Register</button>
+				</form>
+			</div>
 		</div>
 	</div>
 </body>

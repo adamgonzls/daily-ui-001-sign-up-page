@@ -1,78 +1,8 @@
-/****************************************
-  Inherited Syles
-*****************************************/
-/*
-See this explanation for details
-https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
-*/
+//Variables
+@import "vars";
 
-html {
-    box-sizing: border-box;
-    color: #444;
-    font: 12pt 'Open Sans', Arial;
-    font-weight: 300;
-}
+//Mixins
+// @import "mixins";
 
-*, *::before, *::after {
-    box-sizing: inherit;
-    color: inherit;
-    font: inherit;
-}
-
-/****************************************
-  Defaults
-*****************************************/
-
-
-/****************************************
-  Helpers
-*****************************************/
-
-
-/****************************************
-  Layout
-*****************************************/
-.page {
-  background-color: pink;
-  height: 100vh;
-}
-
-.signup-container {
-  margin: 0 auto;
-  padding: 20px;
-  max-width: 900px;
-  display: flex;
-  > div {
-    flex: 1;
-    max-height: 100%;
-  }
-}
-
-.social-login-container {
-  background-color: green;
-}
-
-.signup-form-container {
-  background-color: red;
-  padding: 40px;
-  h1 {
-    margin: 0 auto;
-    text-align: center;
-  }
-  #signup-form {
-    margin: 0 auto;
-    background-color: cyan;
-    input {
-      display: block;
-      width: 100%;
-      border-bottom: 1px solid black;
-    }
-    #signup-form-submit-button {
-      display: block;
-    }
-  }
-}
-
-/****************************************
-  Components
-*****************************************/
+//Layout
+@import "layout";

@@ -5,71 +5,85 @@
 See this explanation for details
 https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
 */
+
 html {
-  box-sizing: border-box;
-  color: #444;
-  font: 12pt 'Open Sans', Arial;
-  font-weight: 300; }
+    box-sizing: border-box;
+    color: #444;
+    font: 12pt 'Open Sans', Arial;
+    font-weight: 300;
+}
 
 *, *::before, *::after {
-  box-sizing: inherit;
-  color: inherit;
-  font: inherit; }
+    box-sizing: inherit;
+    color: inherit;
+    font: inherit;
+}
 
 /****************************************
   Defaults
 *****************************************/
+
+
 /****************************************
   Helpers
 *****************************************/
+
+
 /****************************************
   Layout
 *****************************************/
 .page {
   background-color: pink;
-  height: 100vh; }
+  height: 100vh;
+}
 
 .signup-container {
   margin: 0 auto;
   padding: 20px;
   max-width: 800px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .signup-container > div {
-    -webkit-flex: 1;
-    -ms-flex: 1;
+  display: flex;
+  > div {
     flex: 1;
-    max-height: 100%; }
+    max-height: 100%;
+  }
+}
 
 .social-login-container {
-  background-color: #fff;
+  background-color: $white;
   background-image: url(../images/woman-500w.jpg);
-  background-size: cover; }
+  background-size: cover;
+}
 
 .signup-form-container {
   background-color: red;
-  padding: 40px; }
-  .signup-form-container h1 {
+  padding: 40px;
+  h1 {
     margin: 0 auto;
-    text-align: center; }
-  .signup-form-container #signup-form {
+    text-align: center;
+  }
+  #signup-form {
     margin: 0 auto;
-    background-color: cyan; }
-    .signup-form-container #signup-form label input:not(#userNewsletterOptIn) {
-      display: block;
-      width: 100%;
-      border: 0;
-      background-color: transparent;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid black; }
-    .signup-form-container #signup-form #signup-form-submit-button {
+    background-color: cyan;
+    label {
+      input:not(#userNewsletterOptIn) {
+        display: block;
+        width: 100%;
+        border: 0;
+        background-color: transparent;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black;
+      }
+    }
+    #signup-form-submit-button {
       background-color: orange;
       display: block;
       width: 100%;
       border: none;
-      color: #fff; }
+      color: $white;
+    }
+  }
+}
 
 /****************************************
   Components

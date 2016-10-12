@@ -27,12 +27,18 @@ html {
 *****************************************/
 .page {
   background-color: pink;
+  position: relative;
   height: 100vh; }
 
 .signup-container {
   margin: 0 auto;
   padding: 20px;
-  max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
@@ -45,7 +51,22 @@ html {
 .social-login-container {
   background-color: #fff;
   background-image: url(../images/woman-500w.jpg);
-  background-size: cover; }
+  background-size: cover;
+  background-position: center center;
+  min-width: 400px; }
+  .social-login-container div {
+    text-align: center; }
+  .social-login-container button {
+    text-transform: uppercase;
+    width: 80%;
+    color: white;
+    border-radius: 5px; }
+    .social-login-container button#googleSignUp {
+      background-color: #db4437; }
+    .social-login-container button#twitterSignUp {
+      background-color: #1da1f2; }
+    .social-login-container button#facebookSignUp {
+      background-color: #3b5998; }
 
 .signup-form-container {
   background-color: red;

@@ -34,13 +34,18 @@ html {
 *****************************************/
 .page {
   background-color: pink;
+  position: relative;
   height: 100vh;
 }
 
 .signup-container {
   margin: 0 auto;
   padding: 20px;
-  max-width: 800px;
+  // max-width: 800px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   > div {
     flex: 1;
@@ -52,6 +57,27 @@ html {
   background-color: $white;
   background-image: url(../images/woman-500w.jpg);
   background-size: cover;
+  background-position: center center;
+  min-width: 400px;
+  div {
+    // width: 100%;
+    text-align: center;
+  }
+  button {
+    text-transform: uppercase;
+    width: 80%;
+    color: white;
+    border-radius: 5px;
+    &#googleSignUp {
+      background-color: $google-red;
+    }
+    &#twitterSignUp {
+      background-color: $twitter-blue;
+    }
+    &#facebookSignUp {
+      background-color: $facebook-blue;
+    }
+  }
 }
 
 .signup-form-container {

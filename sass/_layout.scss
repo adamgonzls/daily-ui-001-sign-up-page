@@ -33,20 +33,21 @@ html {
   Layout
 *****************************************/
 .page {
-  background-color: pink;
   position: relative;
+  background-color: pink;
   height: 100vh;
 }
 
 .signup-container {
-  margin: 0 auto;
-  padding: 20px;
-  // max-width: 800px;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+  // max-width: 800px;
   > div {
     flex: 1;
     max-height: 100%;
@@ -54,58 +55,95 @@ html {
 }
 
 .social-login-container {
+  position: relative;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: $white;
   background-image: url(../images/woman-500w.jpg);
   background-size: cover;
   background-position: center center;
   min-width: 400px;
-  div {
-    // width: 100%;
-    text-align: center;
-  }
-  button {
-    text-transform: uppercase;
-    width: 80%;
-    color: white;
-    border-radius: 5px;
-    &#googleSignUp {
-      background-color: $google-red;
+  .social-options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    div {
+      // width: 100%;
+      text-align: center;
     }
-    &#twitterSignUp {
-      background-color: $twitter-blue;
-    }
-    &#facebookSignUp {
-      background-color: $facebook-blue;
+    button {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 10px 50px;
+      font-size: .8em;
+      text-transform: uppercase;
+      width: 90%;
+      color: white;
+      border-radius: 10px;
+      border: none;
+      &:hover {
+        color: green;
+      }
+      &#googleSignUp {
+        background-color: $google-red;
+      }
+      &#twitterSignUp {
+        background-color: $twitter-blue;
+      }
+      &#facebookSignUp {
+        background-color: $facebook-blue;
+      }
     }
   }
 }
 
 .signup-form-container {
-  background-color: red;
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #253039;
   padding: 40px;
+  // text-transform: uppercase;
+  color: white;
+  &>span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #253039;
+  }
   h1 {
     margin: 0 auto;
+    margin-bottom: 50px;
     text-align: center;
   }
   #signup-form {
     margin: 0 auto;
-    background-color: cyan;
+    margin-bottom: 30px;
+    // background-color: cyan;
     label {
+      text-transform: uppercase;
       input:not(#userNewsletterOptIn) {
         display: block;
-        width: 100%;
+        width: 16em;
         border: 0;
         background-color: transparent;
-        margin-top: 5px;
+        margin-top: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid black;
       }
     }
     #signup-form-submit-button {
-      background-color: orange;
       display: block;
-      width: 100%;
+      margin-top: 15px;
       border: none;
+      border-radius: 7px;
+      background-color: orange;
+      width: 100%;
       color: $white;
     }
   }

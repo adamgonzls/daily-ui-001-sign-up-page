@@ -26,22 +26,23 @@ html {
   Layout
 *****************************************/
 .page {
-  background-color: pink;
   position: relative;
+  background-color: pink;
   height: 100vh; }
 
 .signup-container {
-  margin: 0 auto;
-  padding: 20px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px; }
   .signup-container > div {
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -49,47 +50,84 @@ html {
     max-height: 100%; }
 
 .social-login-container {
+  position: relative;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: #fff;
   background-image: url(../images/woman-500w.jpg);
   background-size: cover;
   background-position: center center;
   min-width: 400px; }
-  .social-login-container div {
-    text-align: center; }
-  .social-login-container button {
-    text-transform: uppercase;
-    width: 80%;
-    color: white;
-    border-radius: 5px; }
-    .social-login-container button#googleSignUp {
-      background-color: #db4437; }
-    .social-login-container button#twitterSignUp {
-      background-color: #1da1f2; }
-    .social-login-container button#facebookSignUp {
-      background-color: #3b5998; }
+  .social-login-container .social-options {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 90%; }
+    .social-login-container .social-options div {
+      text-align: center; }
+    .social-login-container .social-options button {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 10px 50px;
+      font-size: .8em;
+      text-transform: uppercase;
+      width: 90%;
+      color: white;
+      border-radius: 10px;
+      border: none; }
+      .social-login-container .social-options button:hover {
+        color: green; }
+      .social-login-container .social-options button#googleSignUp {
+        background-color: #db4437; }
+      .social-login-container .social-options button#twitterSignUp {
+        background-color: #1da1f2; }
+      .social-login-container .social-options button#facebookSignUp {
+        background-color: #3b5998; }
 
 .signup-form-container {
-  background-color: red;
-  padding: 40px; }
+  position: relative;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #253039;
+  padding: 40px;
+  color: white; }
+  .signup-form-container > span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #253039; }
   .signup-form-container h1 {
     margin: 0 auto;
+    margin-bottom: 50px;
     text-align: center; }
   .signup-form-container #signup-form {
     margin: 0 auto;
-    background-color: cyan; }
-    .signup-form-container #signup-form label input:not(#userNewsletterOptIn) {
-      display: block;
-      width: 100%;
-      border: 0;
-      background-color: transparent;
-      margin-top: 5px;
-      margin-bottom: 10px;
-      border-bottom: 1px solid black; }
+    margin-bottom: 30px; }
+    .signup-form-container #signup-form label {
+      text-transform: uppercase; }
+      .signup-form-container #signup-form label input:not(#userNewsletterOptIn) {
+        display: block;
+        width: 16em;
+        border: 0;
+        background-color: transparent;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid black; }
     .signup-form-container #signup-form #signup-form-submit-button {
-      background-color: orange;
       display: block;
-      width: 100%;
+      margin-top: 15px;
       border: none;
+      border-radius: 7px;
+      background-color: orange;
+      width: 100%;
       color: #fff; }
 
 /****************************************

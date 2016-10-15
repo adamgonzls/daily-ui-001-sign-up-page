@@ -42,11 +42,15 @@ html {
   transform: translate(-50%, -50%);
   margin: 0 auto;
   border-radius: 10px;
-  padding: 20px; }
+  padding: 20px;
+  width: 70%; }
   .signup-container > div {
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
     max-height: 100%; }
 
 .social-login-container {
@@ -71,13 +75,20 @@ html {
     .social-login-container .social-options button {
       margin-top: 15px;
       margin-bottom: 15px;
-      padding: 10px 50px;
+      padding: 10px 50px 10px 15px;
       font-size: .8em;
       text-transform: uppercase;
       width: 90%;
       color: white;
       border-radius: 10px;
       border: none; }
+      .social-login-container .social-options button .left-span {
+        display: inline-block;
+        width: 20%;
+        text-align: left; }
+      .social-login-container .social-options button .center-span {
+        display: inline-block;
+        width: 70%; }
       .social-login-container .social-options button:hover {
         color: green; }
       .social-login-container .social-options button#googleSignUp {
@@ -112,7 +123,10 @@ html {
     margin: 0 auto;
     margin-bottom: 30px; }
     .signup-form-container #signup-form label {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: .65em; }
+      .signup-form-container #signup-form label span {
+        color: #F55300; }
       .signup-form-container #signup-form label input:not(#userNewsletterOptIn) {
         display: block;
         width: 16em;
@@ -126,7 +140,7 @@ html {
       margin-top: 15px;
       border: none;
       border-radius: 7px;
-      background-color: orange;
+      background-color: #F55300;
       width: 100%;
       color: #fff; }
 

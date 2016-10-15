@@ -48,8 +48,10 @@ html {
   border-radius: 10px;
   padding: 20px;
   // max-width: 800px;
+  width: 70%;
   > div {
     flex: 1;
+    flex-basis: 50%;
     max-height: 100%;
   }
 }
@@ -76,13 +78,22 @@ html {
     button {
       margin-top: 15px;
       margin-bottom: 15px;
-      padding: 10px 50px;
+      padding: 10px 50px 10px 15px;
       font-size: .8em;
       text-transform: uppercase;
       width: 90%;
       color: white;
       border-radius: 10px;
       border: none;
+      .left-span {
+        display: inline-block;
+        width: 20%;
+        text-align: left;
+      }
+      .center-span {
+        display: inline-block;
+        width: 70%;
+      }
       &:hover {
         color: green;
       }
@@ -127,6 +138,10 @@ html {
     // background-color: cyan;
     label {
       text-transform: uppercase;
+      font-size: .65em;
+      span {
+        color: $tangelo;
+      }
       input:not(#userNewsletterOptIn) {
         display: block;
         width: 16em;
@@ -142,7 +157,7 @@ html {
       margin-top: 15px;
       border: none;
       border-radius: 7px;
-      background-color: orange;
+      background-color: $tangelo;
       width: 100%;
       color: $white;
     }

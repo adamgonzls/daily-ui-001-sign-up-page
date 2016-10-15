@@ -39,6 +39,10 @@ html {
 }
 
 .signup-container {
+  @include less-than(825px) {
+    padding: 5px;
+    width: 100%;
+  }
   display: flex;
   position: absolute;
   top: 50%;
@@ -49,7 +53,6 @@ html {
   padding: 20px;
   max-width: 700px;
   width: 70%;
-  // font-size: .75em;
   > div {
     flex: 1;
     flex-basis: 50%;
@@ -65,7 +68,6 @@ html {
   background-image: url(../images/woman-500w.jpg);
   background-size: cover;
   background-position: center center;
-  // min-width: 400px;
   .social-options {
     position: absolute;
     top: 50%;
@@ -73,13 +75,15 @@ html {
     transform: translate(-50%, -50%);
     width: 90%;
     div {
-      // width: 100%;
       text-align: center;
       .fa {
         font-size: 1.7em;
       }
     }
     button {
+      @include less-than(589px) {
+        padding-right: 10px;        
+      }
       margin-top: 15px;
       margin-bottom: 15px;
       padding: 10px 50px 10px 15px;
@@ -90,6 +94,9 @@ html {
       border-radius: 10px;
       border: none;
       .left-span {
+        @include less-than(312px) {
+          display: none;
+        }
         display: inline-block;
         width: 20%;
         text-align: left;
@@ -97,9 +104,6 @@ html {
       .center-span {
         display: inline-block;
         width: 70%;
-      }
-      &:hover {
-        // color: green;
       }
       &#googleSignUp {
         background-color: $google-red;
@@ -115,14 +119,24 @@ html {
 }
 
 .signup-form-container {
+  @include less-than(589px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @include less-than (301px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
   position: relative;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: #253039;
   padding: 40px;
-  // text-transform: uppercase;
   color: $white;
   &>span {
+    @include less-than(301px) {
+      padding: 5px;
+    }
     position: absolute;
     top: 50%;
     left: 0;

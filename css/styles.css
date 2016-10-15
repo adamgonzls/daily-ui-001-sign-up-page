@@ -27,7 +27,7 @@ html {
 *****************************************/
 .page {
   position: relative;
-  background-color: pink;
+  background-color: #F6F2E1;
   height: 100vh; }
 
 .signup-container {
@@ -72,6 +72,8 @@ html {
     width: 90%; }
     .social-login-container .social-options div {
       text-align: center; }
+      .social-login-container .social-options div .fa {
+        font-size: 1.7em; }
     .social-login-container .social-options button {
       margin-top: 15px;
       margin-bottom: 15px;
@@ -89,8 +91,6 @@ html {
       .social-login-container .social-options button .center-span {
         display: inline-block;
         width: 70%; }
-      .social-login-container .social-options button:hover {
-        color: green; }
       .social-login-container .social-options button#googleSignUp {
         background-color: #db4437; }
       .social-login-container .social-options button#twitterSignUp {
@@ -104,7 +104,7 @@ html {
   border-bottom-right-radius: 10px;
   background-color: #253039;
   padding: 40px;
-  color: white; }
+  color: #fff; }
   .signup-form-container > span {
     position: absolute;
     top: 50%;
@@ -113,7 +113,9 @@ html {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+    font-size: .55em;
+    text-transform: uppercase;
     background-color: #253039; }
   .signup-form-container h1 {
     margin: 0 auto;
@@ -130,7 +132,7 @@ html {
       .signup-form-container #signup-form label input:not(#userNewsletterOptIn) {
         display: block;
         width: 100%;
-        min-width: 250px;
+        max-width: 250px;
         border: 0;
         background-color: transparent;
         margin-top: 10px;

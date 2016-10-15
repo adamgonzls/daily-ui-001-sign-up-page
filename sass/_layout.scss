@@ -34,7 +34,7 @@ html {
 *****************************************/
 .page {
   position: relative;
-  background-color: pink;
+  background-color: $spanish-white;
   height: 100vh;
 }
 
@@ -75,6 +75,9 @@ html {
     div {
       // width: 100%;
       text-align: center;
+      .fa {
+        font-size: 1.7em;
+      }
     }
     button {
       margin-top: 15px;
@@ -96,7 +99,7 @@ html {
         width: 70%;
       }
       &:hover {
-        color: green;
+        // color: green;
       }
       &#googleSignUp {
         background-color: $google-red;
@@ -118,14 +121,16 @@ html {
   background-color: #253039;
   padding: 40px;
   // text-transform: uppercase;
-  color: white;
+  color: $white;
   &>span {
     position: absolute;
     top: 50%;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+    font-size: .55em;
+    text-transform: uppercase;
     background-color: #253039;
   }
   h1 {
@@ -136,7 +141,6 @@ html {
   #signup-form {
     margin: 0 auto;
     margin-bottom: 30px;
-    // background-color: cyan;
     label {
       text-transform: uppercase;
       font-size: .55em;
@@ -146,14 +150,13 @@ html {
       input:not(#userNewsletterOptIn) {
         display: block;
         width: 100%;
-        min-width: 250px;
+        max-width: 250px;
         border: 0;
         background-color: transparent;
         margin-top: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid $cloud-burst;
         font-size: 1.5em;
-        // font-weight: light;
       }
     }
     .newsletter-checkbox {

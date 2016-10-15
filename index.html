@@ -13,7 +13,9 @@
 		<div class="signup-container">
 			<div class="social-login-container">
 				<div class="social-options">
-					<div><button id="googleSignUp">Sign up using Google+</button></div>
+					<div><button id="googleSignUp">
+						<span class="left-span">g</span>
+						<span class="center-span">Sign up using Google+</span></button></div>
 					<div><button id="twitterSignUp">Sign up using Twitter</button></div>
 					<div><button id="facebookSignUp">Sign up using Facebook</button></div>
 				</div>
@@ -22,10 +24,10 @@
 				<span>Or</span>
 				<h1>Superdry.</h1>
 				<form id="signup-form" action="">
-					<label for="userEmail">Email<input type="email" id="userEmail"></label>
-					<label for="userFirstName">First Name<input type="text" id="userFirstName"></label>
-					<label for="userLastName">Last Name<input type="text" id="userLastName"></label>
-					<label for="userCity">City<input type="text" id="userCity"></label>
+					<label for="userEmail">E-mail<span>*</span><input type="email" id="userEmail"></label>
+					<label for="userFirstName">First Name<span>*</span><input type="text" id="userFirstName"></label>
+					<label for="userLastName">Last Name<span>*</span><input type="text" id="userLastName"></label>
+					<label for="userCity">City<span>*</span><input type="text" id="userCity"></label>
 					<label for="userNewsletterOptIn"><input type="checkbox" id="userNewsletterOptIn" checked>I would like to receive the newsletter</label>
 					<button id="signup-form-submit-button" type="submit">Register</button>
 				</form>

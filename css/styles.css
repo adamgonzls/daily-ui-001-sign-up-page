@@ -31,13 +31,11 @@ html {
   height: 100vh; }
 
 .signup-container {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   margin: 0 auto;
@@ -50,10 +48,8 @@ html {
       padding: 5px;
       width: 100%; } }
   .signup-container > div {
-    -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
-    -webkit-flex-basis: 50%;
     -ms-flex-preferred-size: 50%;
     flex-basis: 50%;
     max-height: 100%; }
@@ -70,7 +66,6 @@ html {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 90%; }
@@ -127,7 +122,6 @@ html {
     position: absolute;
     top: 50%;
     left: 0;
-    -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     border-radius: 50%;
